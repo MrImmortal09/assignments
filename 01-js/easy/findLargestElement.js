@@ -7,6 +7,13 @@
 
 function findLargestElement(numbers) {
     
+
+        numbers.sort((a, b) => a - b);
+        // To sort elements in an array in JavaScript, 
+        // you can use the sort() method. 
+        // However, by default, sort() converts the elements to strings and sorts them lexicographically.
+        return numbers[numbers.length-1];
+
 }
 
 module.exports = findLargestElement;
